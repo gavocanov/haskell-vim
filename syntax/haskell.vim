@@ -16,6 +16,10 @@ if get(g:, 'haskell_backpack', 0)
   syn keyword haskellBackpackDependency dependency
 endif
 
+if get(g:, 'haskell_eta', 0)
+  syn keyword haskellForeignKeywords java
+endif
+
 syn spell notoplevel
 syn match haskellRecordField contained containedin=haskellBlock
   \ "[_a-z][a-zA-Z0-9_']*\(,\s*[_a-z][a-zA-Z0-9_']*\)*\_s\+::\_s"
